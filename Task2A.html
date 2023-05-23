@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Averages</title>
+</head>
+<body>
+  <script>
+    function calculateAverage(scores) {
+      let sum = 0;
+
+      for (let i = 0; i < scores.length; i++) {
+        sum += scores[i];
+      }
+
+      let average = Math.floor(sum / scores.length);
+
+      return average;
+    }
+
+    let studentScores = [70, 90, 92, 88, 95];
+    let averageScore = calculateAverage(studentScores);
+
+    console.log("Average score: " + averageScore);
+  </script>
+</body>
+</html>
