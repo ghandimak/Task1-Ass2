@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Value Check</title>
+</head>
+<body>
+  <script>
+    function checkArrayValue(array, value) {
+      if (array.includes(value)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    let arr = [1, 2, 3, 4, 5];
+    let val = 3;
+    let result = checkArrayValue(arr, val);
+
+    console.log(result);
+  </script>
+</body>
+</html>
